@@ -155,7 +155,7 @@ Research Associate, UCH Research Group (Ubiquitous, Cloud and Human-Computer Int
 
 [![Website](https://img.shields.io/badge/Website-rifatrudro.xyz-663399?style=for-the-badge&logo=googlechrome&logoColor=white)](https://rifatrudro.xyz)
 [![Email](https://img.shields.io/badge/Email-mamun.rudro%40aiub.edu-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mamun.rudro@aiub.edu)
-[![AIUB Profile]([https://img.shields.io/badge/AIUB-Profile-1B1F3B?style=for-the-badge)](https://www.aiub.edu/profile/rifatrudro](https://www.aiub.edu/faculty-list/faculty-profile?q=mamun.rudro#mamun.rudro@aiub.edu))
+[![AIUB Profile](https://img.shields.io/badge/AIUB-Profile-1B1F3B?style=for-the-badge)](https://www.aiub.edu/faculty-list/faculty-profile?q=mamun.rudro#mamun.rudro@aiub.edu)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0608--0369-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-0608-0369)
 [![GitHub](https://img.shields.io/badge/GitHub-RRudro-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RRudro)
 
