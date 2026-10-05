@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title> Patient Registration Form </title>
+    </head>
+    <body>
+        <img src="Yolo21.png" height="100px" > 
+        <h1> Patient Registration Form </h1>
+        <form>
+            <fieldset>
+                <legend> Patient Personal Information </legend>
+               <table>
+                <tr>
+                    <td> <label for="PatientName"> Patient Name :  </label> </td>
+                    <td> <input type="text" name="PatientName" id="PatientName" for="PatientName" placeholder="Enter Your Name" required> </td>
+                </tr>
+                <tr>
+                    <td>  <label for="PatientAge"> Patient Age : </label> </td>
+                    <td> <input type="number" name="PatientAge" id="PatientAge" for="PatientAge" placeholder="Enter Your Age "> </td>
+                </tr>
+
+                <tr>
+                    <td>  <label for="PatientEmail"> Patient Email : </label> </td>
+                    <td> <input type="email" name="PatientEmail" id="PatientEmail" for="PatientEmail" placeholder="Enter Your Email "> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="PatientGender"> Gender : </label>
+                        <td> 
+                        <input type="radio" name="gender" id="Male" for="Gender"> Male
+                        <input type="radio" name="gender" id="Female" for="Gender"> Female </td>
+                </tr>
+
+                <tr> 
+                    <td> <label for="PatientDoc"> Medical History : </label></td>
+                    <td> <input type ="file" name ="file" id="medicaldoc" for="medicaldoc"> </td>
+                </tr>
+
+                <tr> 
+                    <td> <label for="DOB"> DOB : </label></td>
+                    <td> <input type ="date" name ="DOB" id="DOB" for="DOB"> </td>
+                </tr>
+
+                <tr> 
+                    <td> <label for="Address"> Address : </label></td>
+                    <td> 
+                        <textarea id="Address" for="Address" cols="20" rows="5" style="resize: none;"> </textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="Citizen"> Citizenship : </label> </td>
+                    <td>
+                    <select>
+                        <option id="blank"> Select Country </option>
+                        <option id="BD"> Bangladesh </option>
+                        <option id="USA"> USA </option>
+                        <option id ="UK"> UK </option>
+                        <option id="AUS"> Australia </option>
+                        <option id="JP"> Japan </option>
+                    </select>
+                    </td>
+
+                    <tr>
+                        <td> <label for="Dept"> Doctor Department: </label></td>
+                        <td> <input type="checkbox" id="DeptMedicine" for="dept" name="dept"> Medicine 
+                        <input type="checkbox" id="DeptCardiac" for="dept" name="dept"> Cardiac
+                        <input type="checkbox" id="DeptNeoro" for="dept" name="dept"> Neorology
+                        </td>
+                    </tr>
+                </tr>
+               </table>
+            </fieldset>
+ <br>
+ <h3> User Info</h3>
+<fieldset>
+   
+    <!-- <legend> User Info </legend> -->
+    <table>
+        <tr>
+            <td> <label for="username"> User Name: </label> </td>
+            <td> <input type="text" id="username" for="username"> </td>
+        </tr>
+        <tr>
+            <td> <label for="Password"> Password: </label></td>
+            <td> <input type="password" id="password" for="password"></td>
+
+        </tr>
+    </table>
+</fieldset>
+<br>
+
+<input type="submit" id="submit" for="submit" value="Signup">
+<input type="reset" id="reset" for="reset">
+        </form>
+    </body>
+</html>
