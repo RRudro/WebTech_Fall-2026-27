@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 WebTech — Fall 2026-27
+# 🌐 WebTech - Fall 2026-27
 
 ### CSC 3215 · Web Technologies
 
