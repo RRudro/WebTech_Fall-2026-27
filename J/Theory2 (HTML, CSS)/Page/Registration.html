@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title> Patient Registration Form</title>
+        <link rel="stylesheet" href="../Design/Style.css">
+    </head>
+    <body>
+        <img src="logo.png" id="logo">
+
+        <br>
+        <br>
+
+        <video controls poster="">
+           <source src="AIUB Virtual Tour _ 2021.mp4" type="mp4">  
+           <source src="AIUB Virtual Tour _ 2021.mp4" type="video/webm">  
+
+        </video>
+
+
+
+
+        <h1> Patient Registration Form </h1>
+        <form>
+            <fieldset>
+                <legend> Patient Personal Information </legend>
+                <table>
+                    <tr>
+                        <td> <label for="PatientName" >Patient Name: </label> </td>
+                        <td> <input type="text" id="PatientName" for="PatientName"placeholder="Enter Your Name" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="PatientAge"> Patient Age: </label></td>
+                        <td> <input type="number" id="PatientAge" for="PatientAge" placeholder="Enter the Age" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="PatientEmail"> Patient Email: </label></td>
+                        <td> <input type="email" id="PatientEmail" for="PatientEmail" placeholder="Enter the Email" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="PatientGender"> Gender: </label></td>
+                        <td> <input type="radio" id="PatientGender" name = "gender" for="PatientGenderM" value="Male"> Male 
+                        <input type="radio" id="PatientGender"  name="gender" for="PatientGenderF" value="Female"> Female </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="PatietRecods"> Prescription: </label></td>
+                        <td> <input type="file" id="PatietRecods"  for="PatietRecods"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="DOB"> DOB: </label></td>
+                        <td> <input type="date" id="DOB"  for="DOB"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="Address"> Address: </label></td>
+                        <td> <textarea placeholder="Enter Your Address" rows="5" cols="30"  Style= "resize:none"></textarea> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> <label for="Citizenship"> Citizenship: </label></td>
+                        <td>
+                            <select>
+                                <option id="Blank"> -------------  </option>
+                                <option id="Bangladesh"> Bangladesh </option>
+                                <option id="USA"> USA </option>
+                                <option id="UK"> UK </option>
+                                <option id="CANADA"> CANADA </option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="doctortype"> Doctor Department Type: </label></td>
+                        <td> <input type="checkbox" id="Medicine" name="doctortype"> Medince 
+                        <input type="checkbox" id="Cardiac" name="doctortype"> Cardiac </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+        <fieldset>
+            <legend> User Profile</legend>
+            <table>
+                <tr> 
+                    <td> <label for="UserName"> User Name: </label></td>
+                    <td> <input type="text" id="password" for="userpassword" required></td>
+                </tr>
+
+                <tr>
+                     <td> <label for="password"> Password: </label></td>
+                    <td> <input type="password" id="password" for="userpassword" required></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <br>
+
+        <input type="submit" id="submit" for="submit" value="Signup">
+        <input type="reset" id="reset" for="reset" >
+        </form>
+    </body>
+</html>
