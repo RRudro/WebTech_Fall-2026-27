@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head> 
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../Design/Style.css">
+        <title> Registration Form </title>
+    </head>
+    <body>
+        <img src="../Assets/logo.png" id="logo">
+        <br>
+        <video  controls poster="../Assets/Yolo21.png">
+            <source src="../Assets/AIUB Virtual Tour _ 2021.mp4" type="mp4">
+            <source src="../Assets/AIUB Virtual Tour _ 2021.mp4" type="video/webm">
+        </video>
+
+       <h1> Patient Registration Form </h1>
+       <form>
+        <fieldset>
+            <legend> Personal Information </legend>
+            <table>
+                <tr>
+                    <td> <label for="PatientName"> Patient Name: </label> </td>
+                    <td> <input type="text" for="PatientName" id="PatientName" name="PatientName" placeholder="Enter Your Name" required> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="PatientAge"> Patient Age: </label> </td>
+                    <td> <input type="number" for="PatientAge" id="PatientAge" name="PatientAge" placeholder="Enter Your Age"> </td>
+                </tr>
+
+
+                <tr>
+                    <td> <label for="PatientEmail"> Patient Email: </label> </td>
+                    <td> <input type="email" for="PatientEmail" id="PatientEmail" name="PatientEmail" placeholder="Enter Your Email"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="Gender"> Gender: </label> </td>
+                    <td>
+                     <input type="radio" for="Male" id="gender" name="Gender"> Male 
+                     <input type="radio" for="Female" id="gender" name="Gender"> Female 
+                    </td>
+                </tr>
+
+                 <tr>
+                    <td> <label for="Document"> Patient Medical History: </label> </td>
+                    <td> <input type="file" for="Document" id="Document" name="Document"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="DOB"> DOB: </label> </td>
+                    <td> <input type="date" for="DOB" id="DOB" name="DOB"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="Address"> Address: </label> </td>
+                    <td> 
+                        <textarea for="Address" id="Address" name="Address" cols="20" rows="10" style="resize: none;"> </textarea>
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td> <label for="Citizenship"> Citizenship: </label> </td>
+                    <td> 
+                        <select>
+                            <option id="blank"> Select Option  </option>
+                            <option id="BD"> Bangladesh  </option>
+                            <option id="USA"> USA  </option>
+                            <option id="CAD"> CANADA  </option>
+                            <option id="AUS"> Australia  </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="Dept"> Doctor Department: </label> </td>
+                    <td> <input type="checkbox" for="DOCDept" id="Medicine" name="DOCDept"> Medicine 
+                    <input type="checkbox" for="DOCDept" id="Cardiac" name="DOCDept"> Cardiac 
+                    </td>
+                </tr>
+            </table>      
+        </fieldset>
+
+        <fieldset>
+            <legend> User Profile </legend>
+            <table>
+                <tr>
+                   <td> <label for="UserName"> User Name: </label> </td>
+                   <td> <input type="text" for="UserName" id="UserName" name="UserName" placeholder="Enter Your User Name"> </td>
+                </tr>
+
+                  <tr>
+                   <td> <label for="Password"> Password: </label> </td>
+                   <td> <input type="password" for="Password" id="Password" name="Password" placeholder="Enter Your Password"> </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <input type="submit" id="Submit" for="Submit" value="Signup">
+        <input type="reset" id="reset" for="reset" >
+
+       </form>
+    </body>
+</html>
