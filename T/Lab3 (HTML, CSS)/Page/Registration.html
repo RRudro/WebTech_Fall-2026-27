@@ -2,19 +2,37 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale= 1.0">
         <link rel="stylesheet" href="../Design/Style.css">
         <title> Patient Registration Form </title>
     </head>
-    <body>
+    <body id="top">
+        <nav class="navbar">
         <img src="logo.png" id="logo" > 
-        <br>
+        <ul class="menu">
+            <li> <a href="https://www.aiub.edu"> Home </a> </li>
+            <li> <a href="#tour"> Virtual Tour </a> </li>
+            <li class="dropdown">
+               
+                    <a href="#Department"> Departments</a>
+                    <ul class="submenu">
+                        <li> <a href="#Medicine"> Medicine  </a> </li>
+                        <li> <a href="#Cardiac"> Cardiac  </a> </li>
+                        <li> <a href="#NeoroMedicine"> NeoroMedicine  </a> </li>
+                    </ul>                
+            </li>
+        </ul>
+        
+
         <video width="400" height="225" controls poster="Yolo21.png">
             <source src="AIUB Virtual Tour _ 2021.mp4" type="mp4">
             <source src="AIUB Virtual Tour _ 2021.mp4" type="video/webm">
         </video>
 
+        </nav>
 
         <h1> Patient Registration Form </h1>
+        
         <form>
             <fieldset>
                 <legend> Patient Personal Information </legend>
@@ -81,10 +99,10 @@
                </table>
             </fieldset>
  <br>
- <h3> User Info</h3>
+
 <fieldset>
    
-    <!-- <legend> User Info </legend> -->
+    <legend> User Info </legend>
     <table>
         <tr>
             <td> <label for="username"> User Name: </label> </td>
