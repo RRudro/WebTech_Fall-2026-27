@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+    padding: 2px 2px 2px 5px;
+    text-align: center;
+    color: white;
+    border: 5px solid white;
+    margin: 10px ;
+}
+
+.topnav{
+    background-color: gray;
+    overflow: hidden;
+}
+.topnav a{
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.container{
+    max-width: 620px;
+}
+
+.footer{
+    background-color: gray;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px ;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* margin: 0 auto; */
+    max-height: 80px;
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    background-color: whitesmoke;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+#logo{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+video{
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0 auto 25px auto;
+    background-color: whitesmoke;
+}
+fieldset{
+    background-color: bisque;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend{
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    padding: 6px 14px;
+    border-radius: 100px
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td{
+    padding: 8px 6px;
+    vertical-align: top;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+select, 
+textarea{
+    width: 100%;
+    padding: 8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: snow;
+}
+textarea{
+    height: 140px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    padding: 10px 28px;
+    font-size: 16px;
+    accent-color: rgb(11, 11, 11);
+}
+input[type="submit"],
+input[type="reset"]{
+    padding: 10px 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 11px;
+    width: 48%;
+}
+#submit{
+    color: black;
+    background-color: skyblue;
+}
+
+#reset{
+    color: black;
+    background-color: skyblue;
+}
+
+#submit:hover{
+    background-color: crimson;
+}
+#reset:hover{
+    background-color: crimson;
+}
+
