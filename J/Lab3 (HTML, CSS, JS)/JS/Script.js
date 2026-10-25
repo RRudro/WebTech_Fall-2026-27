@@ -40,5 +40,41 @@ console.log(car1.slice(0,3));
 console.log(car1.indexOf("V"));
 console.log(car1.indexOf("V")+"!");
 
-let paragraph = document.getElementById("demotext");
-paragraph.innerHTML="Demo text From JS";
+// let paragraph = document.getElementById("demotext");
+// paragraph.innerHTML="Demo text From JS";
+
+
+
+
+
+function collect_data()
+{
+    let name=collect_name();
+    return false;
+
+}
+function collect_name()
+{
+    let PName = document.getElementById("PatientName").value;
+    let PError= document.getElementById("ErrorText");
+    if(PName=="")
+    {
+        // console.log("Enter the Name");
+        PError.innerHTML="Enter The Name";
+        return false;
+    }
+    else{ 
+        console.log(PName);
+    } 
+
+    if(PName.length<6)
+    {
+       PError.innerHTML="Name Must Be atleast 6 Char";
+        return false; 
+    }
+    else{
+        
+    }
+    return false;
+
+}

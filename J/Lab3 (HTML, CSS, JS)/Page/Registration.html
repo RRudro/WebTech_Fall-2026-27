@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title> Patient Registration Form</title>
         <link rel="stylesheet" href="../Design/Style.css">
-        <script src="../JS/Script.js" defer></script>
+        <script src="../JS/Script.js"></script>
     </head>
     
     <body>
@@ -29,22 +29,23 @@
         
         <p id ="demotext"> </p>
 
-        <form>
+        <form onsubmit="return collect_data()">
             <fieldset>
                 <legend> Patient Personal Information </legend>
                 <table>
                     <tr>
                         <td> <label for="PatientName" >Patient Name: </label> </td>
-                        <td> <input type="text" id="PatientName" for="PatientName"placeholder="Enter Your Name" required> </td>
+                        <td> <input type="text" id="PatientName" for="PatientName"placeholder="Enter Your Name"> 
+                        <p id= "ErrorText"> </p> </td>
                         
                     </tr>
                     <tr>
                         <td> <label for="PatientAge"> Patient Age: </label></td>
-                        <td> <input type="number" id="PatientAge" for="PatientAge" placeholder="Enter the Age" required> </td>
+                        <td> <input type="number" id="PatientAge" for="PatientAge" placeholder="Enter the Age" > </td>
                     </tr>
                     <tr>
                         <td> <label for="PatientEmail"> Patient Email: </label></td>
-                        <td> <input type="email" id="PatientEmail" for="PatientEmail" placeholder="Enter the Email" required> </td>
+                        <td> <input type="email" id="PatientEmail" for="PatientEmail" placeholder="Enter the Email"> </td>
                     </tr>
                     <tr>
                         <td> <label for="PatientGender"> Gender: </label></td>
@@ -93,21 +94,24 @@
             <table>
                 <tr> 
                     <td> <label for="UserName"> User Name: </label></td>
-                    <td> <input type="text" id="password" for="userpassword" required></td>
+                    <td> <input type="text" id="UserName" for="userpassword"></td>
                 </tr>
 
                 <tr>
                      <td> <label for="password"> Password: </label></td>
-                    <td> <input type="password" id="password" for="userpassword" required></td>
+                    <td> <input type="password" id="password" for="userpassword"></td>
                 </tr>
 
             </table>
         </fieldset>
         <br>
 
+        
         <input type="submit" id="submit" for="submit" value="Signup"  href="Login.html">
         <input type="reset" id="reset" for="reset" >
+
         </form>
+
 
         <div class="footer">
             <h5> Created By Rifat Rudro </h5>

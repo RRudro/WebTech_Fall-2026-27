@@ -11,6 +11,12 @@ body{
     padding: 30px 20px;
 }
 
+#ErrorText{
+    color: red;
+    text-align: center;
+}
+
+
 #logo{
     display: block;
     width: 150px;
