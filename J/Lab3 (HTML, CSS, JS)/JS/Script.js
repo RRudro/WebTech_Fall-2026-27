@@ -41,4 +41,4 @@ console.log(car1.indexOf("V"));
 console.log(car1.indexOf("V")+"!");
 
 let paragraph = document.getElementById("demotext");
-paragraph.innerHTML = "Demo text From JS";
+paragraph.innerHTML="Demo text From JS";
