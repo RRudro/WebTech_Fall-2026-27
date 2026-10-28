@@ -51,55 +51,56 @@ console.log(cars);
 
 function collect_data()
 {
-    let validName= validateName();
+    let validName = validateName();
     let validateAge = validAge();
     let validateEmail = validEmail();
     let validategender = validateGender();
-    
-    
-    return false;
+
+    return validName && validateAge && validateEmail && validategender;
 }
 
 
 function validateName(){
-    let Pname=document.getElementById("PatientName").value;
+    let Pname=document.getElementById("PatientName").value.trim();
     let Error= document.getElementById("NameError");
     if(Pname=="")
     {
         Error.innerHTML = "Enter The Name";
+        return false;
     }
     else if(Pname.length<6)
     {
         Error.innerHTML = "Name Must be at least 6 Char";
+        return false;
     }
     else{
         Error.innerHTML = "Patient Name: "+Pname;
+        return true;
     }
-    return false;
 }
 
 function validAge()
 {
-    let PAge= document.getElementById("PatientAge").value;
+    let PAge= Number(document.getElementById("PatientAge").value);
     let ErrorAge = document.getElementById("AgeError");
-    if(PAge=="")
+    if(document.getElementById("PatientAge").value === "")
     {
-        ErrorAge.innerHTML = "Please Enter The Age"
+        ErrorAge.innerHTML = "Please Enter The Age";
         return false;
     }
-    else if (PAge>0 && PAge<100){
+    else if (PAge < 1 || PAge > 100){
         ErrorAge.innerHTML = "Age Must be Within the Limit";
         return false;
     }
     else{
         ErrorAge.innerHTML = "Patient Age: "+PAge;
+        return true;
     }
-    return false;
 }
 
 function validEmail()
 {
-    let Email = document.getElementById("PatientEmail").value;
+    let Email = document.getElementById("PatientEmail").value.trim();
     let Error = document.getElementById("EmailError");
     let regexpression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
     if(Email ==="")
@@ -107,29 +108,29 @@ function validEmail()
         Error.innerHTML = "Please Enter The Email";
         return false;
     }
-    else if(test(Email))
+    else if(!regexpression.test(Email))
     {
         Error.innerHTML = "Please Enter The Right Email Format";
         return false;
     }
     else{
         Error.innerHTML = "Patient Email: "+Email;
+        return true;
     }
-    return false;
 }
 
 function validateGender()
 {
-    let genders = document.getElementById("Gender");
+    let genders = document.querySelectorAll('input[name="gender"]');
     let GenderError = document.getElementById("ErrorGender");
     let selectGender = "";
-    
+
     for(let i=0; i<genders.length; i++)
     {
         if(genders[i].checked)
         {
             selectGender = genders[i].value;
-            return false;
+            break;
         }
     }
     if(selectGender=="")
@@ -139,7 +140,7 @@ function validateGender()
         }
         else{
             GenderError.innerHTML = "Gender: "+selectGender;
-            return true
+            return true;
         }
 }
 
