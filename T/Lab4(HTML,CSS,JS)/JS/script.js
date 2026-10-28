@@ -57,7 +57,7 @@ function collect_data()
     let validategender = validateGender();
     let validDept = validateDepartment();
 
-    return validName && validateAge && validateEmail && validategender && validDept;
+    return false; 
 }
 
 
