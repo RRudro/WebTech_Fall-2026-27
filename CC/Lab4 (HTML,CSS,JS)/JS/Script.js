@@ -154,21 +154,20 @@ function validateDept()
     {
         if(departments[i].checked)
         {
-            selectDept = push(departments[i].value);
+            selectDept.push(departments[i].value);
         }
     }
     if(selectDept.length === 0)
     {
-        DeptError.innerHTML = "Please Select At least one Doctor dept";
+        ErrorDept.textContent = "Please select at least one doctor department.";
         return false;
     }
     else{
-        DeptError.innerHTML = "Selected Dept(s): "+ selectDept.join(", ");
+        ErrorDept.textContent = "Selected department(s): " + selectDept.join(", ");
         return true;
     }
 
 }
-
 
 
 
