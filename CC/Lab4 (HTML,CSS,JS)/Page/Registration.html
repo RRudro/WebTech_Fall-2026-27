@@ -8,10 +8,9 @@
         <title> Registration Form </title>
     </head>
 
+    
     <div class="container">
     <body>
-       
-
         
         <div class="header">
             <img src="../Assets/logo.png" id="logo">
@@ -32,7 +31,7 @@
 
        
 
-       <form onsubmit="return collect_data()">
+       <form onsubmit="return collect_data()" novalidate>
         <fieldset>
             <legend> Personal Information </legend>
             <table>
@@ -59,8 +58,9 @@
                 <tr>
                     <td> <label for="Gender"> Gender: </label> </td>
                     <td>
-                     <input type="radio" for="Male" id="gender" name="Gender"> Male 
-                     <input type="radio" for="Female" id="gender" name="Gender"> Female 
+                     <input type="radio" id="Male" name="Gender" value="Male"> Male
+                     <input type="radio" id="Female" name="Gender" value="Female"> Female
+                     <p id="GenderError"></p>
                     </td>
                 </tr>
 
@@ -97,8 +97,9 @@
 
                 <tr>
                     <td> <label for="Dept"> Doctor Department: </label> </td>
-                    <td> <input type="checkbox" for="DOCDept" id="Medicine" name="DOCDept"> Medicine 
-                    <input type="checkbox" for="DOCDept" id="Cardiac" name="DOCDept"> Cardiac 
+                    <td> <input type="checkbox" id="Medicine" name="DOCDept" value="Medicine"> Medicine
+                    <input type="checkbox" id="Cardiac" name="DOCDept" value="Cardiac"> Cardiac
+                    <p id="DeptError"></p>
                     </td>
                 </tr>
             </table>      
@@ -127,6 +128,6 @@
        <div class="footer">
         <h5> Created on 2026 </h5>
        </div>
-    </body>
     </div>
+    </body>
 </html>

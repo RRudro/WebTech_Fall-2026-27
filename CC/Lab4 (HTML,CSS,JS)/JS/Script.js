@@ -58,10 +58,10 @@ function collect_data()
 {
     let Name=validName();
     let Age=validAge();
-    let Gender = validateGender();
     let Email = validateEmail();
- 
-    return Name && Age && Gender && Email;
+    let Gender = ValidateGender();
+    let dept = validateDept();
+    return false;
 }
 
 function validName()
@@ -107,17 +107,70 @@ function validateEmail()
     if(Email==="")
     {
         Error.innerHTML = "Please Enter The Email";
-        return false;
     }
     else if (!RegularExpression.test(Email))
     {
         Error.innerHTML = "Please Enter The Email in the Exact Format";
-        return false; 
     }
     else{
         Error.innerHTML = "Patient Email: "+Email;
+    }
+    return false;
+}
+
+function ValidateGender()
+{
+    let genders = document.querySelectorAll('input[name="Gender"]')
+    let GenderError = document.getElementById("GenderError");
+    let selectGender ="";
+    
+    for(let i=0; i<genders.length; i++)
+    {
+        if(genders[i].checked)
+        {
+            selectGender = genders[i].value;
+            break;
+        }
+    }
+    if(selectGender=="")
+    {
+        GenderError.innerHTML = "Please Enter the Values of Gender";
+        return false;
+    }
+    else{
+        GenderError.innerHTML = "Patient Gender: "+selectGender;
+        return true
+    }
+
+}
+
+function validateDept()
+{
+    let departments = document.querySelectorAll('input[name="DOCDept"]');
+    let ErrorDept = document.getElementById("DeptError");
+    let selectDept = [];
+    
+    for (let i=0; i<departments.length; i++)
+    {
+        if(departments[i].checked)
+        {
+            selectDept = push(departments[i].value);
+        }
+    }
+    if(selectDept.length === 0)
+    {
+        DeptError.innerHTML = "Please Select At least one Doctor dept";
+        return false;
+    }
+    else{
+        DeptError.innerHTML = "Selected Dept(s): "+ selectDept.join(", ");
         return true;
     }
+
 }
+
+
+
+
 
 
