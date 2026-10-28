@@ -58,6 +58,7 @@ function collect_data()
 {
     let Name=validName();
     let Age=validAge();
+    let Gender = validateGender();
  
     return false;
 }
