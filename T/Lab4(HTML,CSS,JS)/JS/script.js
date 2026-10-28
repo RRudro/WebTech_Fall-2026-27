@@ -49,6 +49,17 @@ console.log(cars);
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function (event) {
+            if (!collect_data()) {
+                event.preventDefault();
+            }
+        });
+    }
+});
+
 function collect_data()
 {
     let validName = validateName();
@@ -155,7 +166,7 @@ function validateDepartment()
     {
         if(departments[i].checked)
         {
-            selectedDepartments.push(departments[i].id);
+            selectedDepartments.push(departments[i].value);
         }
     }
 

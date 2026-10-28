@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale= 1.0">
         <link rel="stylesheet" href="../Design/Style.css">
-        <script src="../JS/script.js"> </script>
+        <script src="../JS/script.js" defer></script>
         <title> Patient Registration Form </title>
     </head>
-     <div class="container"> 
     <body>
+     <div class="container"> 
        
         <img src="logo.png" id="logo" > 
      
@@ -33,7 +33,7 @@
        
 
         
-        <form onsubmit="return collect_data()">
+        <form>
             <fieldset>
                 <legend> Patient Personal Information </legend>
                <table>
@@ -94,9 +94,9 @@
 
                     <tr>
                         <td> <label for="Dept"> Doctor Department: </label></td>
-                        <td> <input type="checkbox" id="DeptMedicine" for="dept" name="dept"> Medicine 
-                        <input type="checkbox" id="DeptCardiac" for="dept" name="dept"> Cardiac
-                        <input type="checkbox" id="DeptNeoro" for="dept" name="dept"> Neorology
+                        <td> <input type="checkbox" id="DeptMedicine" for="dept" name="dept" value="Medicine"> Medicine 
+                        <input type="checkbox" id="DeptCardiac" for="dept" name="dept" value="Cardiac"> Cardiac
+                        <input type="checkbox" id="DeptNeoro" for="dept" name="dept" value="Neurology"> Neurology
                         <p id="DeptError"></p></td>
                     </tr>
                 </tr>
