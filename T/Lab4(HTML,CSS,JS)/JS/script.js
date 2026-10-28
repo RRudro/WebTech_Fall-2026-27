@@ -55,8 +55,9 @@ function collect_data()
     let validateAge = validAge();
     let validateEmail = validEmail();
     let validategender = validateGender();
+    let validDept = validateDepartment();
 
-    return validName && validateAge && validateEmail && validategender;
+    return validName && validateAge && validateEmail && validategender && validDept;
 }
 
 
@@ -143,6 +144,33 @@ function validateGender()
             return true;
         }
 }
+
+function validateDepartment()
+{
+    let departments = document.querySelectorAll('input[name="dept"]');
+    let deptError = document.getElementById("DeptError");
+    let selectedDepartments = [];
+
+    for(let i=0; i<departments.length; i++)
+    {
+        if(departments[i].checked)
+        {
+            selectedDepartments.push(departments[i].id);
+        }
+    }
+
+    if(selectedDepartments.length === 0)
+    {
+        deptError.innerHTML = "Please select at least one department";
+        return false;
+    }
+    else
+    {
+        deptError.innerHTML = "Selected Department(s): " + selectedDepartments.join(", ");
+        return true;
+    }
+}
+
 
 
 
