@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: black;
+    background-color: #eef3f8;
+    max-width: 720px;
+    margin:0 auto;
+    padding: 30px 20px;
+}
+
+#ErrorText{
+    color: red;
+    text-align: center;
+}
+
+
+#logo{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header{
+    text-align: center;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    background-color: black;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color:gray;
+    padding: 12px;
+    margin: 10px;
+}
+
+.topnav a{
+    float:left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+
+.footer{
+   
+    background-color:gray;
+    text-align: center;
+}
+
+
+video{
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 0 auto 25px auto;
+    background-color: aqua;
+}
+
+fieldset{
+    background-color: antiquewhite;
+    border: 1px solid burlywood;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend{
+    background-color: darkturquoise;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 6px 14px ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+table{
+  width: 100%;  
+  border-collapse: collapse;
+}
+td{
+    padding: 8px 6px; 
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select,
+textarea{
+    width: 100%;
+    padding:8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serifs; 
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+}
+textarea{
+    height: 110px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin: 10px 4px 0 10px;
+    accent-color: black;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width:48%;
+}
+
+#submit{
+    color: white;
+    background-color: black;
+}
+
+#reset{
+    color: white;
+    background-color: black;
+}
+
+#submit:hover{
+    background-color: skyblue;
+}
+
+#reset:hover{
+    background-color: skyblue;
+}
