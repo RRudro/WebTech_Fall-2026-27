@@ -92,8 +92,16 @@ function validateEmail()
         return false;
     }
     else{
-        Error.textContent = "";
+        Error.textContent = "Patient Email: "+Email;
         return true;
     }
 
+}
+function ValidGender()
+{
+    //radio
+}
+function validDepartment()
+{
+    //Checkbox
 }
