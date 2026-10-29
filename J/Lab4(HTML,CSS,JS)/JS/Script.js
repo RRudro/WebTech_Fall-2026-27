@@ -18,7 +18,7 @@ console.log(a);
 //case 3
 let b = "AIUB";
 let b1= "NSU";
-console.log(a);
+console.log(b);
 console.log(b1);
 
 
@@ -49,35 +49,31 @@ console.log(car1.indexOf("V")+"!");
 
 function collect_data()
 {
-    let name=collect_name();
-    let email = validateEmail();
-    return false;
+    let validname = collect_name();
+    let validemail = validateEmail();
+    return validname && validemail;
 
 }
 function collect_name()
 {
-    let PName = document.getElementById("PatientName").value;
+    let PName = document.getElementById("PatientName").value.trim();
     let PError= document.getElementById("ErrorText");
-    if(PName=="")
+    if(PName === "")
     {
-        // console.log("Enter the Name");
-        PError.innerHTML="Enter The Name";
+        PError.textContent = "Enter The Name";
         return false;
     }
-    else{ 
-        console.log(PName);
-    } 
 
     if(PName.length<6)
     {
-       PError.innerHTML="Name Must Be atleast 6 Char";
+        PError.textContent = "Name Must Be atleast 6 Char";
         return false; 
     }
     else{
-        
-    }
-    return false;
-
+        PError.textContent = "";
+        console.log(PName);
+    } 
+    return true;
 }
 
 function validateEmail()
@@ -87,16 +83,16 @@ function validateEmail()
     let Expression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(Email ==="")
         {
-            Email.innerHTML = "Please Enter The Email";
+            Error.textContent = "Please Enter The Email";
             return false;
         } 
     else if(!Expression.test(Email))
     {
-        Email.innerHTML = "Please Enter The Email Again";
+        Error.textContent = "Please Enter The Email Again";
         return false;
     }
     else{
-        Email.innerHTML = "Email: "+Email;
+        Error.textContent = "";
         return true;
     }
 
