@@ -60,17 +60,17 @@ function collect_name()
     let PError= document.getElementById("ErrorText");
     if(PName === "")
     {
-        PError.textContent = "Enter The Name";
+        PError.innerHTML = "Enter The Name";
         return false;
     }
 
     if(PName.length<6)
     {
-        PError.textContent = "Name Must Be atleast 6 Char";
+        PError.innerHTML = "Name Must Be atleast 6 Char";
         return false; 
     }
     else{
-        PError.textContent = "";
+        PError.innerHTML = "";
         console.log(PName);
     } 
     return true;
@@ -83,16 +83,16 @@ function validateEmail()
     let Expression = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if(Email ==="")
         {
-            Error.textContent = "Please Enter The Email";
+            Error.innerHTML = "Please Enter The Email";
             return false;
         } 
     else if(!Expression.test(Email))
     {
-        Error.textContent = "Please Enter The Email Again";
+        Error.innerHTML = "Please Enter The Email Again";
         return false;
     }
     else{
-        Error.textContent = "Patient Email: "+Email;
+        Error.innerHTML = "Patient Email: "+Email;
         return true;
     }
 
