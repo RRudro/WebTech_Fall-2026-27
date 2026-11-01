@@ -148,7 +148,7 @@ function validDepartment()
         return false;        
     }
     else{
-        error.innerHTML = "Selected Department(s): " + selectedDept.join(",");
+        error.innerHTML = "Selected Department(s): " +selectedDept.join(", ");
         return true;  
     }
 
