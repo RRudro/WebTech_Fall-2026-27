@@ -128,6 +128,7 @@ function ValidGender()
         }
 
 }
+
 function validDepartment()
 {
     //Checkbox 
