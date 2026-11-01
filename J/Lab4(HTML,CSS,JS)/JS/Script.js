@@ -92,7 +92,8 @@ function validateEmail()
         return false;
     }
     else{
-        Error.innerHTML = "Patient Email: "+Email;
+        let safeEmail = Email.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        Error.innerHTML = "Patient Email: "+safeEmail;
         return true;
     }
 
