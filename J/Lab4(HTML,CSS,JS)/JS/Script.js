@@ -51,7 +51,8 @@ function collect_data()
 {
     let validname = collect_name();
     let validemail = validateEmail();
-    return validname && validemail;
+
+    return false;
 
 }
 function collect_name()
@@ -70,7 +71,7 @@ function collect_name()
         return false; 
     }
     else{
-        PError.innerHTML = "";
+        PError.innerHTML = ""+PName;
         console.log(PName);
     } 
     return true;

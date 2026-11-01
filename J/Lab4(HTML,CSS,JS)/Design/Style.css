@@ -11,7 +11,7 @@ body{
     padding: 30px 20px;
 }
 
-#ErrorText{
+p{
     color: red;
     text-align: center;
 }
