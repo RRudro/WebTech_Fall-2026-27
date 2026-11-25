@@ -1,0 +1,44 @@
+body{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 40px;
+    background-color: antiquewhite;
+    color: blue;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+form{
+    max-width: 360px;
+}
+
+label{
+
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-sizing: border-box;
+    border: none;
+}
+
+#submit{
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: beige;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: none;
+
+
+}
